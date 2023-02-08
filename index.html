@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Blogr</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,600;1,300;1,600&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+  </style>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <header class="bg-Very-light-red-bg p-4 font-Ubuntu pb-10 rounded-bl-5xl ">
+    <nav class="container flex py-6 px-10 justify-between ">
+      <div class="left flex items-center gap-8">
+      <img src="./images/logo.svg" alt="logo">
+      <ul class="hidden gap-6 md:flex">
+        <li class="list-none cursor-pointer opacity-70">
+          <span class="flex gap-1 text-white font-bold items-center hover:underline">
+            Product
+            <img src="./images/icon-arrow-light.svg" alt="arrow" class="object-contain">
+          </span>
+        </li>
+        <li class="list-none cursor-pointer opacity-70">
+          <span class="flex gap-1 text-white font-bold items-center hover:underline">
+            Company
+            <img src="./images/icon-arrow-light.svg" alt="arrow" class="object-contain">
+          </span>
+        </li>
+        <li class="list-none cursor-pointer opacity-70 ">
+          <span id="connect" class="flex gap-1 text-white font-bold items-center hover:underline">
+            <p>Connect</p>
+            <img src="./images/icon-arrow-light.svg" alt="arrow" class="object-contain">
+          </span>
+          <div id="dropdown" class="hidden fixed bg-White flex-col gap-3 mt-4 py-4 px-5 font-Ubuntu ">
+            <h1 class="hover:font-bold">Contact</h1>
+            <h1>NewsLetter</h1>
+            <h1>Linked In</h1>
+          </div>
+        </li>
+      </ul>
+    </div>
+      <div class="right hidden items-center gap-8 px-4 md:flex">
+        <h1 class="font-bold text-white cursor-pointer opacity-80">Login</h1>
+        <a href="#" class="bg-white py-4 px-12 rounded-full font-bold text-Light-red-CTA-text hover:bg-Very-light-red-CTA-hover-background hover:text-white">Sign Up</a>
+      </div>
+      <div class="md:hidden">
+        <img src="./images/icon-hamburger.svg" alt="">
+      </div>
+    </nav>
+    <div class="flex flex-col text-center py-6 font-Overpass gap-6 md:items-center">
+      <h1 class="text-white font-bold text-5xl">A modern publishing platform</h1>
+      <p class="text-white text-base opacity-70">Grow your audience and build your online brand</p>
+      <span class="flex gap-6 items-center justify-center">
+      <a href="#" class="bg-white font-bold text-Light-red-CTA-text px-8 py-4 rounded-full hover:bg-Very-light-red-CTA-hover-background hover:text-white">Start for Free</a>
+      <a href="#" class="text-white outline outline-1 px-8 py-4 rounded-full font-bold hover:bg-white hover:text-Light-red-CTA-text">Learn More</a>
+    </span>
+    </div>
+    <div class="absolute hidden w-10/12 bg-white py-6 px-10 -top-24 right-2/4  overflow-hidden translate-x-2/4 translate-y-2/4 md:hidden">
+      <ul class="flex flex-col gap-5 items-center">
+        <li class="list-none cursor-pointer opacity-70 ">
+          <span class="flex gap-1 text-Very-dark-blue-headings font-bold items-center hover:underline">
+            Product
+            <img src="./images/icon-arrow-dark.svg" alt="arrow" class="object-contain">
+          </span>
+        </li>
+        <li class="list-none cursor-pointer opacity-70">
+          <span class="flex gap-1 text-Very-dark-blue-headings font-bold items-center hover:underline">
+            Company
+            <img src="./images/icon-arrow-dark.svg" alt="arrow" class="object-contain">
+          </span>
+        </li>
+        <li class="list-none cursor-pointer opacity-70 ">
+          <span id="connect" class="flex gap-1 text-Very-dark-blue-headings font-bold items-center hover:underline">
+            <p>Connect</p>
+            <img src="./images/icon-arrow-dark.svg" alt="arrow" class="object-contain">
+          </span>
+          <div id="dropdown" class=" relative bg-White flex-col gap-3 mt-4 py-4 px-5 font-Ubuntu ">
+            <h1 class="hover:font-bold">Contact</h1>
+            <h1>NewsLetter</h1>
+            <h1>Linked In</h1>
+          </div>
+        </li>
+      </ul>
+      <div class="right  items-center gap-3 px-4 flex flex-col">
+        <h1 class="font-bold text-Very-dark-blue-headings cursor-pointer opacity-80">Login</h1>
+        <a href="#" class="bg-Very-light-red-bg py-4 px-12 rounded-full font-bold text-white hover:bg-Very-light-red-CTA-hover-background hover:text-white">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="font-Overpass relative">
+    <h1 class="text-center mt-12 font-bold text-4xl text-Very-dark-blue-headings md:mt-20">Designed for the future</h1>
+
+    <section class="flex flex-col-reverse md:flex-row">
+    <section class="left container w-full flex flex-col gap-14 md:w-2/4 py-5 px-12 md:mt-32">
+      <span class="flex flex-col gap-3">
+        <h1 class="font-Overpass font-bold text-4xl text-Very-dark-blue-headings md:text-3xl">Introducing an extensible editor</h1>
+        <p class="text-Very-dark-grayish-blue-body-copy text-base ">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+        change the looks of a blog.</p>
+      </span>
+        <span class="flex flex-col gap-3">
+          <h1 class="font-Overpass font-bold text-4xl text-Very-dark-blue-headings md:text-3xl">Robust content management</h1>
+          <p class="text-Very-dark-grayish-blue-body-copy text-base">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+        </span>
+    </section>
+    <section class="right flex w-full mx-auto md:w-2/4 md:mx-0">
+      <img src="./images/illustration-editor-desktop.svg" alt="illustration-editor-desktop" class="hidden object-cover ml-36 overflow-hidden md:flex">
+      <img src="./images/illustration-editor-mobile.svg" alt="illustration-editor-mobile" class="flex mx-auto my-8 md:hidden">
+    </section>
+  </section>
+
+  <section class="section-2 flex w-full bg-Very-dark-gray-blue p-8 relative h-5xl mt-72 my-20 rounded-bl-5xl rounded-tr-5xl md:h-80 md:mt-20">
+    <img src="./images/illustration-phones.svg" alt="illustration-phones" class="absolute top md:-top-1/4">
+    <div class="absolute w-2/4 right-0 p-10 flex flex-col justify-center items-center gap-10 bottom-0 md:top-0">
+    <h1 class="items-end text-white text-3xl font-Ubuntu">State of the Art Infrastructure</h1>
+    <p class="text-white text-base opacity-70 ">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+      This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+    </div>
+  </section>
+
+  <section class="mt-20 flex flex-col md:flex-row justify-center items-center align-middle md:mt-48">
+    <section class="w-2/4">
+      <img src="./images/illustration-laptop-desktop.svg" alt="illustration-laptop-desktop" class="hidden md:flex">
+      <img src="./images/illustration-laptop-mobile.svg" alt="illustration-laptop-mobile" class="md:hidden">
+    </section>
+    <section class="p-10 px-20 w-full flex flex-col gap-16 mt-10 md:w-2/4 ">
+      <div class="flex flex-col gap-3 text-Very-dark-blue-headings">
+        <h1 class=" font-medium text-3xl font-Ubuntu">Free, open, simple</h1>
+      <p class="opacity-70">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+      </div>
+     <div class="flex flex-col gap-3 text-Very-dark-blue-headings">
+      <h1 class=" font-medium text-3xl font-Ubuntu">Powerful tooling</h1>
+      <p class="opacity-70 font-Overpass">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        capable of producing even the most complicated sites.</p>
+     </div>
+    </section>
+  </section>
+
+  </main>
+
+  <footer class="bg-Very-dark-gray-blue py-20  px-32 flex flex-col  text-white rounded-tr-5xl md:flex-row gap-8 text-center md:justify-between md:gap-0 md:text-start">
+    <img  src="./images/logo.svg" alt="logo" class="h-16 mx-auto md:mx-0" >
+    <div class="flex flex-col gap-3">
+      <h6 class="font-Overpass font-medium cursor-pointer">Product</h6>
+      <ul class="flex flex-col gap-1">
+        <li class="hover:underline opacity-70">Overview</li>
+        <li class="hover:underline opacity-70">Pricing</li>
+        <li class="hover:underline opacity-70">Marketplace</li> 
+        <li class="hover:underline opacity-70">Features</li>
+        <li class="hover:underline opacity-70">Integrations</li>
+      </ul>
+    </div>
+    <div class="flex flex-col gap-3">
+      <h6 class="font-Overpass font-medium cursor-pointer">Company</h6>
+      <ul class="flex flex-col gap-1">
+        <li class="hover:underline opacity-70">About</li>
+        <li class="hover:underline opacity-70">Team</li>
+        <li class="hover:underline opacity-70">Blog</li>
+        <li class="hover:underline opacity-70">Careers</li>
+      </ul>
+    </div>
+    <div class="flex flex-col gap-3">
+      <h6 class="font-Overpass font-medium cursor-pointer">Connect</h6>
+      <ul class="flex flex-col gap-1">
+        <li class="hover:underline opacity-70">Contact</li>
+        <li class="hover:underline opacity-70">NewsLetter</li>
+        <li class="hover:underline opacity-70">LinkedIn</li>
+      </ul>
+    </div>
+  </footer>
+
+  <!--
+    Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+
+  Contact
+  Newsletter
+  LinkedIn
+  
+  Login
+  Sign Up
+
+  A modern publishing platform
+  Grow your audience and build your online brand
+
+  Start for Free
+  Learn More
+
+  Designed for the future
+
+  Introducing an extensible editor
+  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
+
+  Robust content management
+  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+
+  State of the Art Infrastructure
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+
+  Free, open, simple
+  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+
+  Powerful tooling
+  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+  
+  Contact
+  Newsletter
+  LinkedIn
+
+  -->
+ <!--
+   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+ -->
+</body>
+</html>
